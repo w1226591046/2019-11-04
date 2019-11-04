@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <script>
+        //单例模式
+            // obj = {
+            //     name: 'xxx'
+            // }
+        //高级单例模式
+        // function fn(a,b){
+        //     function sum(){
+        //         alert(a)
+        //     }
+        //     sum()
+        //     return{
+        //         a:a,
+        //         b:b
+        //     }
+        // }
+    //   console.log(fn(10,20))  
+       //解决命名冲突的问题
+        // let cc = 10;
+        // (function(){
+        //     let cc = 20;    //把变量放到函数中
+        //     console.log(cc)
+        // })()
+        // console.log(cc)
+        // //命名空间
+        // let name = 10;
+        // obj.name
+        // let name = 20;
+        // obj.name 
+            // const btn = document.querySelectorAll('button')
+            // for(let i=0;i<btn.length;i++){
+            //     btn[i].onclick = function(){
+            //         alert(i)
+            //     }
+            // }
+        
+
+        let obj = (function(){
+            let obj1 = {
+                name:'火影',
+                age:20,
+            }  
+            function vue(a){
+                for(var i=0;i<8;i++){
+                    a++
+                }
+                return a
+            }
+            zed = vue(1)
+            console.log(zed)
+            return {}
+        })()                
+       
+       console.log(obj)
+    </script>
+</body>
+</html>
